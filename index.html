@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main-container">
+    <img src="images/drawers.jpg" alt="Bedroom nightstand styled with an orange vase, showing a simple decorative touch" class="main-image">
+    <div class="second-container">
+      <div class="h1p">
+        <h1 class="head1">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your home
+        </h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+        </p>
+      </div>
+      <div class="third-container">
+        <div class="profile">
+          <img src="images/avatar-michelle.jpg" alt="Profile image of Michelle" class="profile-img">
+          <div class="profile-txt">
+            <h2 class="userhandle">
+              Michelle Appleton
+            </h2>
+            <p>
+              28 Jun 2020
+            </p>
+          </div>
+        </div>
+        <div class="share-container">
+          <button class="btn" id="share-btn">
+            <img src="images/icon-share.svg" alt="share button">
+          </button>
+        
+          <!-- Popup menu -->
+          <div class="share-popup hidden" id="share-popup">
+            <p>Share</p>
+            <div class="share-icons">
+              <img src="images/icon-facebook.svg" alt="Facebook icon">
+              <img src="images/icon-twitter.svg" alt="Twitter icon">
+              <img src="images/icon-pinterest.svg" alt="Pinterest icon">
+            </div> <!-- closes share-icons -->
+          </div> <!-- closes share-popup -->
+        </div> <!-- closes share-container -->
+      </div> <!-- closes third-container -->
+    </div> <!-- closes second-container -->
+  </div> <!-- closes main-container -->
+
+<!-- disables the attribution section for now
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alexander Corrigan</a>.
+  </div>
+-->
+<script src="script.js"></script>
+</body>
+</html>

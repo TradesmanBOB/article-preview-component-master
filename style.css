@@ -1,0 +1,132 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: auto;
+    border-radius: 1rem;
+    background-color: white;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.main-image {
+    width: 40%;
+    height: 30rem;
+}
+
+.second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 6rem;
+    /* colors */
+    background-color: rgb(255, 255, 255);
+}
+
+.h1p {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.h1p p {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.third-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 6rem;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 5rem;
+}
+
+.profile h2 {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.share-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 6rem;
+}
+
+.share-popup {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 4.8rem;
+    right: 4.2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.share-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    background-color: rgb(15, 165, 252);
+    border-radius: 50%;
+    border-color: black;
+}
+
+.btn img {
+    height: 100%;
+    border-radius: 50%;
+    margin: .1rem;
+    width: 3rem;
+}
