@@ -21,12 +21,21 @@ body {
     border-radius: 1rem;
     background-color: white;
     overflow: hidden;
-    padding: 2rem;
 }
 
-.main-image {
-    width: 40%;
-    height: 30rem;
+.first-container {
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-img {
+    position: relative;
+    min-width: 120%;
+    height: 100%;
+    top: 0px;
+    object-fit: cover;
 }
 
 .second-container {
@@ -65,7 +74,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    width: 100%;
+    width: 80%;
     height: 6rem;
 }
 
@@ -85,25 +94,37 @@ body {
     align-items: center;
     width: 4rem;
     height: 6rem;
+    overflow: visible;
 }
 
 .share-popup {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 6rem;
-    height: 6rem;
-    background-color: black;
+    width: 20rem;
+    height: 5rem;
+    background-color: #49556b;
     color: white;
     position: relative;
-    bottom: 4.8rem;
-    right: 4.2rem;
+    bottom: 6rem;
+    right: 8rem;
     border-radius: 0.5rem;
-    padding: 0.5rem;
-    z-index: 10;
+    padding: 0.8rem;
+    z-index: 100;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.8rem;
+}
+
+.share-popup::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: .8rem;
+    border-style: solid;
+    border-color: #49556b transparent transparent transparent;
 }
 
 .share-icons {
@@ -111,22 +132,34 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 0 1rem;
+    size: 4rem;
 }
 
-.hidden {
+.share-popup.hidden {
     display: none;
 }
 
+.share-popup.p {
+    font-size: 300px;
+}
+
 .btn {
-    background-color: rgb(15, 165, 252);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
     border-radius: 50%;
-    border-color: black;
+    padding: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+    position:;
 }
 
 .btn img {
-    height: 100%;
-    border-radius: 50%;
-    margin: .1rem;
-    width: 3rem;
+    object-fit: contain;
+    width: 2rem;
+    height: 2rem;
 }
