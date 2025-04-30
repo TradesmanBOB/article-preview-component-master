@@ -56,9 +56,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
     flex-direction: column;
     padding: 0 2rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .h1p {
@@ -189,6 +190,10 @@ body {
     object-fit: contain;
     width: 2rem;
     height: 2rem;
+}
+
+.share-container .btn.active {
+    background-color: var(--Desaturated-Dark-Blue);
 }
 
 /* MEdia queries 480px testing */
