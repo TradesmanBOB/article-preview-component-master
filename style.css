@@ -1,9 +1,12 @@
 :root {
     --white: #ffffff;
-    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
-    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
-    --Grayish-Blue: hsl(212, 23%, 69%);
-    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%); /* Color (--Desaturated-Dark-Blue) is used to style active button */
+
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%); /* Color (--Desaturated-Dark-Blue) is used to style headers colors */
+
+    --Grayish-Blue: hsl(212, 23%, 69%); /* Color (--Grayish-Blue) used to style p colors */
+
+    --Light-Grayish-Blue: hsl(210, 46%, 95%); /* Color (--Light-Grayish-Blue) used background-col & regular button style */
 }
 
 * {
@@ -65,13 +68,13 @@ body {
 }
 
 .h1p h1 {
-    font-size: 2rem;
-    color: var();
+    font-size: 1.8rem;
+    color: var(--Desaturated-Dark-Blue);
 }
 
 .h1p p {
     font-size: 13px;
-    color: rgb(0, 0, 0);
+    color: var(--Desaturated-Dark-Blue);
 }
 
 .third-container {
@@ -98,7 +101,12 @@ body {
 
 .profile h2 {
     font-size: 2rem;
-    color: black;
+    color: var(--Desaturated-Dark-Blue);
+}
+
+.profile p {
+    font-size: 1rem;
+    color: var(--Grayish-Blue);
 }
 
 .share-container {
